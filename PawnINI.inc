@@ -34,7 +34,7 @@
 	#if (INIMODULE_MAX_BUFFER - 0) == 0
 		#error You forgot to set value of INIMODULE_MAX_BUFFER. Type something like: #define INIMODULE_MAX_BUFFER (4096).
 	#endif
-	#if (INIMODULE_MAX_BUFFER < 0)
+	#if (INIMODULE_MAX_BUFFER < 1)
 		#error You are trying to allocate invalid number of unicode general collation table size. Set value of INIMODULE_MAX_BUFFER greather than 0.
 	#endif
 #else
@@ -45,7 +45,7 @@
 	#if (INIMODULE_MAX_VAR_NAME - 0) == 0
 		#error You forgot to set value of INIMODULE_MAX_VAR_NAME. Type something like: #define INIMODULE_MAX_VAR_NAME (32).
 	#endif
-	#if (INIMODULE_MAX_VAR_NAME < 0)
+	#if (INIMODULE_MAX_VAR_NAME < 1)
 		#error You are trying to allocate invalid number of unicode general collation table size. Set value of INIMODULE_MAX_VAR_NAME greather than 0.
 	#endif
 #else
